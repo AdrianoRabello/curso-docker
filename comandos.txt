@@ -1,0 +1,7 @@
+docker image build -t nginx-simple-build .      -> para criar uma imagem a partir de um aruivo Dockerfile que contenha o local para baixar a imagem
+
+docker container run --name nginx-container -p 80:80 nginx-simple-build -d   ->  docker container run --name <nome do container>  para subir o container com o nome da imagem criada 
+
+docker image tag nginx-simple-build 19031988/simple-bluis1.0   -> docker image tag <nome da imgaem já criada> <nome da nova imagem > criando uma imagem a partir de uma imagem que eu já tenho 
+
+docker image push 19031988/nginx-simple-build-1.0   -> docker image push <<nome da imagem>> para subir a imgagem para o docker hub
