@@ -5,3 +5,9 @@ docker container run --name nginx-container -p 80:80 nginx-simple-build -d   -> 
 docker image tag nginx-simple-build 19031988/simple-bluis1.0   -> docker image tag <nome da imgaem já criada> <nome da nova imagem > criando uma imagem a partir de uma imagem que eu já tenho 
 
 docker image push 19031988/nginx-simple-build-1.0   -> docker image push <<nome da imagem>> para subir a imgagem para o docker hub
+
+docker exec -it <id do container> /bin/bash          -> para acessar o bash do container 
+
+docker rmi <imagem id>  -> to remove imgagem
+
+docker run --publish <intern port : extern port > -d --name <container name > <docker image >  -> para publicar um container com uma imagem existente 
