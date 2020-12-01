@@ -1,0 +1,14 @@
+version: "3.0"
+  services:
+    tomcat:
+      image: 19031988/tomcat-image:2.0
+
+      ports:
+        - "80:80"
+  steps:
+    - uoploading docker.jar 
+    - run: 
+      name: docker cp docker.jar
+      command: docker cp docker.jar containers_tomcat_1:tomcat:/
+  
+
