@@ -7,7 +7,7 @@ services:
       - /mnt/storage/tomcat/webapps:/usr/local/tomcat/webapps
       - /mnt/storage/tomcat/uploads:/usr/local/tomcat/uploads
     ports:
-      - 8080:8012
+      - 80:8012
       - 8009:8009
     deploy:
       resources:
